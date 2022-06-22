@@ -1,0 +1,7 @@
+type WeatherGql {
+  description: String!
+}
+
+type Query {
+  getWeatherForecast(lat: Float!, lng: Float!, date: String!): WeatherGql!
+}
